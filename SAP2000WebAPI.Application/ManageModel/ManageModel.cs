@@ -66,14 +66,18 @@ namespace SAP2000WebAPI.Application.ManageModel
 
     public class ManageModel : IMangeModel
     {
+        #region Get Project Path
+
         public static string RelativeUserDirectory = @"..\SAC Projects";
         public static readonly string UserDirectory = Path.GetFullPath(RelativeUserDirectory);
+
+        #endregion
 
         #region Validate Model Name
 
         public static bool CheckModelName(string ProjectName)
         {
-            string ModelDirectory = UserDirectory + ProjectName;
+            string ModelDirectory = UserDirectory + Path.DirectorySeparatorChar + ProjectName;
             if (Directory.Exists(ModelDirectory))
             {
                 return false;
