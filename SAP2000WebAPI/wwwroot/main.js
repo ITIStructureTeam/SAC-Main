@@ -1,7 +1,7 @@
 import { MapControls } from './Assets/Three.js files/OrbitControls.js'
 
 let PreProcessor = true;
-//let animationID;
+let animationID;
 init();
 // let SceneList = [];
 // renderer.getContext().canvas.addEventListener("webglcontextlost", function(event) {
