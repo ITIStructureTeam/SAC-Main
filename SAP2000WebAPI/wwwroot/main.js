@@ -463,7 +463,7 @@ function update(renderer, scene, camera, controls) {
         ShowDefLineCircles();
     }
 
-    animationID = requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
         update(renderer, scene, camera, controls);
     });
 
