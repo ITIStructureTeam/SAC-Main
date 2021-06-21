@@ -1,0 +1,33 @@
+ SAP2000 v18.2.0 Ultimate 64-bit (Analysis Build 9503/64)                       
+ File: D:\ITI Study Stuff\Grad... Projects\Hamada Tany\SAP Model\Hamada Tany.OUT
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1               -   -   -   -   -   -
+       2 TO       7    A   A   A   A   A   A
+       8 TO       9    -   -   -   -   -   -
+      10 TO      13    A   A   A   A   A   A
+      14 TO      15    -   -   -   -   -   -
+      16 TO      19    A   A   A   A   A   A
+      20 TO      21    -   -   -   -   -   -
+      22 TO      25    A   A   A   A   A   A
+      26               -   -   -   -   -   -
+ 1000000 TO 9000003    A   A   A   A   A   A
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+ 0000000 TO 8000003    A   A   A   A   A   A
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+ 0000000 TO 5000008    A   A   A   A   A   A
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+ 9000000 TO 9000003    A   A   A   A   A   A
