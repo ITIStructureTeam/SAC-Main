@@ -1,27 +1,8 @@
 import { MapControls } from './Assets/Three.js files/OrbitControls.js'
 
 let PreProcessor = true;
-let animationID;
+
 init();
-// let SceneList = [];
-// renderer.getContext().canvas.addEventListener("webglcontextlost", function(event) {
-//     event.preventDefault();
-//     // animationID would have been set by your call to requestAnimationFrame
-//     cancelAnimationFrame(animationID); 
-//     console.log('Hello')
-//     init();
-// }, false);
-
-// renderer.getContext().canvas.addEventListener("webglcontextrestored", function(init) {
-//    //Do something
-//    for(let i = 0; i<SceneList.length; i++)
-//    {
-//        scene.add(SceneList[i])
-//    } 
-//    console.log('HeyHey')
-//    SceneList = [];
-// }, false);
-
 
 function init() {
     // Create scene
@@ -463,7 +444,7 @@ function update(renderer, scene, camera, controls) {
         ShowDefLineCircles();
     }
 
-    animationID = requestAnimationFrame(function () {
+     requestAnimationFrame(function () {
         update(renderer, scene, camera, controls);
     });
 
@@ -968,6 +949,7 @@ function resetScene() {
             Results.ResultsList[i].InView();
         }
     }
+
     for (let i = 0; i < JointReactions.ReactionsList.length; i++)
     {
         if(JointReactions.ReactionsList[i].Draw != null)
@@ -979,7 +961,6 @@ function resetScene() {
     if(DeformedShape.deformationMode){
         DeformedShape.DeformShapesList.forEach(defshape => defshape.InView());
     }
-
 }
 
 function removeArrows() {
