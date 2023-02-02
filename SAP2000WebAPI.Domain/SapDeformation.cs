@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace SAP2000WebAPI.Domain
 {
-    public class SapDeformation
-    {
-        public string FrameID { get; set; }
-        public List<SapDeformationFrame> DeformationDetails { get; set; }
+  public class SapDeformation
+  {
+    public string FrameID { get; set; }
+    public List<SapDeformationFrame> DeformationDetails { get; set; }
 
-        public SapDeformation()
-        {
-            DeformationDetails = new List<SapDeformationFrame>();
-        }
+    public SapDeformation()
+    {
+      DeformationDetails = new List<SapDeformationFrame>();
     }
+  }
 }
